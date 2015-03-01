@@ -1,0 +1,101 @@
+﻿body {}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+.section-page {
+    margin-bottom:50px;
+    padding-bottom:50px;
+
+   
+
+    &:nth-of-type(odd) {
+        background-color: #fff;
+
+        p, h1, h3 {
+            color:$gray-dark;
+        }     
+}
+
+    &:nth-of-type(even) {
+        background-color:$gray-dark;
+
+        p, h1, h3 {
+            color: #fff;
+    }
+}
+
+    a {
+        color:$brand-primary;
+        font-weight:600;
+        
+        &:hover {
+            text-decoration:underline;
+    }
+
+}
+ 
+}
+
+.homeTop {
+         
+}
+
+#nav1 {
+        top:1%;
+        left:1px;
+        opacity:0.8;
+        border-radius:$border-radius-large;
+        font-weight:900;
+
+        a {
+            padding:.1em;
+        }
+
+  a {
+      color:#ff0000;
+        display: inline-block;
+  }
+}
+
+.grey {
+    background:#c3c3c3;
+}
+
+@media (max-width: 480px) { // Landscape phones and down
+    .section-page {
+    margin-bottom:5%;
+    padding-bottom:2%;
+    }
+
+     h1 {
+        margin-left:10%;
+    }
+
+}                         
+@media (max-width: 767px) {    // Landscape phone to portrait tablet
+        .section-page {
+    margin-bottom:5%;
+    padding-bottom:2%;
+    }
+    h1 {
+        margin:auto;
+    }
+}                       
+@media (min-width: 768px) and (max-width: 979px) {// Portrait tablet to landscape and desktop
+        .section-page {
+    margin-bottom:5%;
+    padding-bottom:2%;
+    }
+
+     h1 {
+        margin-left:10%;
+    }
+}  
+@media (min-width: 1200px) {                       // Large desktop
+            .section-page {
+    margin-bottom:50px;
+    padding-bottom:50px;
+    }
+} 
